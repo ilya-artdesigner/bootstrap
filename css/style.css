@@ -32,7 +32,7 @@ header .navbar-brand {
 
 .navbar-nav .nav-item {
     text-transform: uppercase;
-    margin-left: 15px;
+    margin-left: 3rem;
 }
 
 .navbar-nav .nav-item a::after {
@@ -47,4 +47,12 @@ header .navbar-brand {
 
 .navbar-nav .nav-item a:hover::after {
     transform: scale(1);
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,0.75);
+}
+
+header {
+    margin-bottom: 1rem;
 }
