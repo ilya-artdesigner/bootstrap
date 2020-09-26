@@ -11,7 +11,7 @@ img {
 }
 
 a {
-    text-decoration: none;
+    text-decoration-line: none;
     color: #b4ad9e;
 }
 
@@ -35,9 +35,10 @@ header .navbar-brand {
     margin-left: 3rem;
 }
 
-.navbar-nav .nav-item a::after {
+.navbar-nav .nav-item a::after, .link_message::after {
     content: '';
     display: block;
+    box-sizing: border-box;
     width: 100%;
     height: 1px;
     background-color: #898377;
@@ -45,7 +46,7 @@ header .navbar-brand {
     transition: all .3s;
 }
 
-.navbar-nav .nav-item a:hover::after {
+.navbar-nav .nav-item a:hover::after, .link_message:hover::after {
     transform: scale(1);
 }
 
@@ -55,4 +56,49 @@ header .navbar-brand {
 
 header {
     margin-bottom: 1rem;
+}
+
+.carousel-item img {
+    max-width: 1110px;
+    max-height: 517px;
+    object-fit: cover;
+}
+
+.slider_img {
+    margin-bottom: 3.5rem;
+}
+
+.post .post_category, .link_message {
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #898377;
+}
+
+a.link {
+    display: block;
+    max-width: 9rem;
+    text-align: center;
+}
+
+a.link_message {
+    text-decoration-line: none;
+}
+
+.post_category, .post_title {
+    margin-bottom: 1.5rem;
+}
+
+.post_title {
+    font-size: 2rem;
+}
+
+.post_desc {
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.post {
+    margin-bottom: 8rem;
 }
