@@ -60,15 +60,16 @@ header {
 
 .carousel-item img {
     max-width: 1110px;
-    max-height: 517px;
+    height: 80vh;
+    /* min-height: 42vh; */
     object-fit: cover;
 }
 
 .slider_img {
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
 }
 
-.post .post_category, .link_message {
+.post_category, .link_message {
     font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
@@ -82,12 +83,23 @@ a.link {
     text-align: center;
 }
 
-a.link_message {
+a.link_sm {
+    display: block;
+    max-width: 3rem;
+    text-align: center;
+}
+
+a.link_message, .post_category a {
     text-decoration-line: none;
+}
+
+.link_message:hover {
+    color: #343a40;
 }
 
 .post_category, .post_title {
     margin-bottom: 1.5rem;
+    display: block;
 }
 
 .post_title {
@@ -101,4 +113,37 @@ a.link_message {
 
 .post {
     margin-bottom: 8rem;
+}
+
+.card {
+    border: none;
+}
+
+.card-body {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-body .post_desc {
+    margin-bottom: .7rem;
+}
+
+.card-body .post_category {
+    margin-bottom: 1rem;
+}
+
+.card-body .post_title {
+    font-size: 1.7rem;
+}
+
+
+.card-img-top {
+    width: auto;
+    max-height: 280px;
+    object-fit: cover;
+}
+
+.card {
+    max-width: 420px;
+    margin-bottom: 6rem;
 }
