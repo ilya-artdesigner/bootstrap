@@ -172,3 +172,24 @@ a.link_message, .post_category a {
     display: none;
     padding: 0;
 }
+
+.grid_posts {
+    margin-bottom: 6rem;
+}
+
+.subscr {
+    background-color: #ececec;
+    padding-bottom: 10rem;
+}
+
+.subscr_form > label {
+    margin: 7rem auto 3rem;
+}
+
+.form-control, .subscr_form .btn, .form-control:focus {
+    border: 0;
+    border-bottom: 1px solid #343a40;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
