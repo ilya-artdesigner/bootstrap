@@ -147,3 +147,28 @@ a.link_message, .post_category a {
     max-width: 420px;
     margin-bottom: 6rem;
 }
+
+.after_posts .btn-outline-secondary {
+    border-radius: 0;
+    border-color: #626262;
+    color: #626262;
+    padding: 0.6rem 1.7rem;
+}
+
+.after_posts .btn-outline-secondary:hover {
+    background-color: transparent;
+    color: #343a40;
+    border-color: #343a40;
+}
+
+.spinner-border-sm {
+    margin-right: 0.3rem;
+    width: 0.9rem;
+    height: 0.9rem;
+    border-width: 0.2em;
+}
+
+.loader {
+    display: none;
+    padding: 0;
+}
