@@ -11,7 +11,8 @@ img {
 }
 
 a {
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
     color: #b4ad9e;
 }
 
@@ -50,6 +51,7 @@ header .navbar-brand {
     background-color: #898377;
     transform: scale(0);
     transition: all .3s;
+    cursor: pointer;
 }
 
 .navbar-nav .nav-item a:hover::after, .link_message:hover::after {
@@ -67,7 +69,8 @@ header {
 .carousel-item img {
     max-width: 1110px;
     height: 80vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 @media screen and (max-width: 576px) {
@@ -102,7 +105,8 @@ a.link_sm {
 }
 
 a.link_message, .post_category a, .author a {
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
 }
 
 .link_message:hover {
@@ -152,7 +156,8 @@ a.link_message, .post_category a, .author a {
 .card-img-top {
     width: auto;
     max-height: 280px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 0;
 }
 
