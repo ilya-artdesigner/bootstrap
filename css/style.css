@@ -168,6 +168,10 @@ a.link_message, .post_category a {
     border-width: 0.2em;
 }
 
+.load_more i {
+    font-style: initial;
+}
+
 .loader {
     display: none;
     padding: 0;
