@@ -35,6 +35,12 @@ header .navbar-brand {
     margin-left: 3rem;
 }
 
+@media screen and (max-width: 780px) {
+    .navbar-nav .nav-item{
+        margin-left: 0;
+    }
+}
+
 .navbar-nav .nav-item a::after, .link_message::after {
     content: '';
     display: block;
@@ -61,8 +67,14 @@ header {
 .carousel-item img {
     max-width: 1110px;
     height: 80vh;
-    /* min-height: 42vh; */
     object-fit: cover;
+}
+
+@media screen and (max-width: 576px) {
+
+    .carousel-item img {
+        height: 50vh;
+    }
 }
 
 .slider_img {
@@ -89,7 +101,7 @@ a.link_sm {
     text-align: center;
 }
 
-a.link_message, .post_category a {
+a.link_message, .post_category a, .author a {
     text-decoration-line: none;
 }
 
@@ -141,6 +153,7 @@ a.link_message, .post_category a {
     width: auto;
     max-height: 280px;
     object-fit: cover;
+    border-radius: 0;
 }
 
 .card {
@@ -182,12 +195,12 @@ a.link_message, .post_category a {
 }
 
 .subscr {
-    background-color: #ececec;
-    padding-bottom: 10rem;
+    background-color: #e3e3e3;
+    padding: 7rem 0;
 }
 
 .subscr_form > label {
-    margin: 7rem auto 3rem;
+    margin-bottom: 3rem;
 }
 
 .form-control, .subscr_form .btn, .form-control:focus {
@@ -196,4 +209,38 @@ a.link_message, .post_category a {
     border-radius: 0;
     background-color: transparent;
     box-shadow: none;
+    color: #222222;
+}
+
+.copyright {
+    padding: 2rem 0;
+}
+
+@media screen and (max-width: 576px) {
+        .copyright {
+            padding: 2rem 0 0.5rem;
+        }
+
+        .carousel-item img {
+            height: 50vh;
+        }
+}
+
+.copyright .author {
+    font-weight: 700;
+}
+
+.copyright span {
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.socials li{
+    list-style-type: none;
+    margin-right: 1rem;
+}
+.socials ul {
+    margin-top: 1rem;
+    margin-left: -1.5rem;
 }

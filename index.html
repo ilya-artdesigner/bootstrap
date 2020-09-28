@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Bootstrap App</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <a class="navbar-brand" href="#">
                     Minim&#216;
                 </a>
@@ -162,7 +163,7 @@
                         </div>
                     </div>
                     <div class="col d-flex justify-content-center after_posts">
-                        <button type="button" href="#" class="btn btn-outline-secondary btn-lg d-flex align-items-center load_more">
+                        <button type="button" class="btn btn-outline-secondary btn-lg d-flex align-items-center load_more">
                             <span class="spinner-border spinner-border-sm loader" role="status" aria-hidden="true"></span>
                             <i>Load More</i>
                         </button>
@@ -174,10 +175,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <form action="" class="subscr_form">
+                        <form class="subscr_form" action="">
                             <label class="post_title text-center">Sign up for our newsletters!</label>
                             <div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 d-flex">
-                                <input type="email" name ="email" class="form-control" placeholder="Enter valid email address" required>
+                                <input type="email" name ="email" class="form-control" placeholder="post@example.com" required>
                                 <button class="btn" type="submit">&#10147;</button>
                             </div>
                         </form>
@@ -185,6 +186,30 @@
                 </div>
             </div>
         </article>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col d-sm-flex justify-content-between">
+                        <section class="copyright">
+                            <span>
+                                <i class="far fa-copyright"></i>&#32;
+                                <span class="brand_name">Minim&#216;&#32;2020</span>
+                                &#32;&#183;&#32;
+                                <span class="author"><a href="https://github.com/ilya-artdesigner">Ilya Fadeev</a></span>
+                            </span>
+                        </section>
+                        <section class="socials d-flex align-items-center">
+                            <span>Follow</span>
+                            <ul class="d-flex">
+                                <li><a class="soc_link" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="soc_link" href=""><i class="fab fa-twitter"></i></a></li>
+                                <li><a class="soc_link" href=""><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
