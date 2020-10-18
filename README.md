@@ -1,2 +1,2 @@
 # bootstrap
-checkout https://ilya-artdesigner.github.io/bootstrap/
+checkout https://ilya-frontman.github.io/bootstrap/
